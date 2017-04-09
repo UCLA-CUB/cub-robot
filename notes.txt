@@ -1,0 +1,2 @@
+in order to check if the control computer is connected, filter its MAC address against the results of
+iw dev wlan0 station dump | sed -n "s/^Station\ \([0-9a-fA-F:]*\).*$/\1/p"
